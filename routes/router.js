@@ -3,6 +3,7 @@ const authRouter = require("./auth_router");
 const adminRouter = require("./admin.router");
 const studentRouter = require("./student.router");
 const dataRouter = require("./data.router");
+const announcementRouter = require("./annoucement.router");
 
 const router = express.Router();
 
@@ -12,6 +13,7 @@ router.get("/auth/test", (req, res) => {
 });
 
 // auth routes
+router.use("/announcement", announcementRouter);
 router.use("/auth", authRouter);
 router.use("/admin", adminRouter);
 router.use("/student", studentRouter);

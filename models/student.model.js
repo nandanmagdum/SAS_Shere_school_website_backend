@@ -5,8 +5,8 @@ const studentSchema = new mongoose.Schema({
     password: {type: String, required: true},
     name: {type: String, required: true},
     address: {type: String, required: true},
-    class_id: {type: mongoose.Schema.Types.ObjectId, ref: "classes", required: true},
-    staff_id: {type: mongoose.Schema.Types.ObjectId, ref: "staffs", required: true}
+    class_id: {type: String, required: true},
+    staff_id: {type: String,  required: true}
 }, {timestamps: true});
 
 const studentModel = mongoose.model("students", studentSchema);

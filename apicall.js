@@ -6,10 +6,10 @@ const apiCall = async() => {
     console.log("api called");
     console.log(response.body);
     if(response.stausCode === 200){
-        setTimeout( apiCall,1000*60);
+        setTimeout( apiCall,1000*60*10);
     }
     else {
-        setTimeout( apiCall,1000*5);
+        setTimeout( apiCall,1000*60*10);
     }
 }
 

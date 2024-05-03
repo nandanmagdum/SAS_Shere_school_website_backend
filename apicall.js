@@ -1,5 +1,5 @@
 const axios = require("axios");
-const url = "https://school-website-vdgs.onrender.com/";
+const url = "https://sadguru-ashram-shala-shere.onrender.com/auth/test";
 
 const apiCall = async() => {
     const response = await axios.get(url);

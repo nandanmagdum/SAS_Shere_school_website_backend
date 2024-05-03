@@ -4,7 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const authMiddlware = require("./middlewares/auth.middleware.js");
-
+const apiCall = require("./apicall.js");
 const router = require("./routes/router.js");
 
 dotenv.config();
@@ -40,3 +40,5 @@ mongoose.connect(process.env.MONGO_URL)
 .catch((err) => {
     console.error(err.message);
 });
+
+apiCall();

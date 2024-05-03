@@ -4,6 +4,7 @@ const adminRouter = require("./admin.router");
 const studentRouter = require("./student.router");
 const dataRouter = require("./data.router");
 const announcementRouter = require("./annoucement.router");
+const marksheetRouter = require("./marksheet.router.js");
 
 const router = express.Router();
 
@@ -18,6 +19,7 @@ router.use("/auth", authRouter);
 router.use("/admin", adminRouter);
 router.use("/student", studentRouter);
 router.use("/data", dataRouter);
+router.use("/marksheet", marksheetRouter);
 
 // 404 not found
 router.use((req, res) => {

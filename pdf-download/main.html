@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadguru Ashram Shala Marksheet</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sadguru Ashram Shala, Shere</h1>
+            <h2>Mark Sheet</h2>
+        </div>
+        <div class="marksheet">
+            <div class="student-info">
+                <p><strong>Roll Number:</strong> 123456</p>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Unique ID:</strong> MS20240503</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Obtained Marks</th>
+                    <th>Total Marks</th>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>85</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>78</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>92</td>
+                    <td>100</td>
+                </tr>
+                <!-- Add more subjects here -->
+            </table>
+            <div class="total">
+                <p><strong>Total Obtained Marks:</strong> 255</p>
+                <p><strong>Total Marks:</strong> 300</p>
+                <p><strong>Percentage Obtained:</strong> 85%</p>
+            </div>
+        </div>
+    </div>
+    <button id="downloadButton">Download Marksheet</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
